@@ -1,48 +1,53 @@
 import React from "react";
+import { FaqContainer, Question, Answer } from "./FaqSectionStyles";
 
 const FaqSection = () => {
   return (
-    <div className="faq">
+    <FaqContainer>
       <h2>
         Any Questions? <span>FAQ</span>
       </h2>
-      <div className="question">
+      <Question>
         <h4>How do i start?</h4>
-        <div className="answer">
+        <Answer>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, id.
           </p>
-        </div>
-      </div>
-      <div className="question">
+        </Answer>
+        <div className="faq-line"></div>
+      </Question>
+      <Question>
         <h4>How do i start?</h4>
-        <div className="answer">
+        <Answer>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, id.
           </p>
-        </div>
-      </div>
-      <div className="question">
+        </Answer>
+        <div className="faq-line"></div>
+      </Question>
+      <Question>
         <h4>How do i start?</h4>
-        <div className="answer">
+        <Answer>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, id.
           </p>
-        </div>
-      </div>
-      <div className="question">
+        </Answer>
+        <div className="faq-line"></div>
+      </Question>
+      <Question>
         <h4>How do i start?</h4>
-        <div className="answer">
+        <Answer>
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, id.
           </p>
-        </div>
-      </div>
-    </div>
+        </Answer>
+        <div className="faq-line"></div>
+      </Question>
+    </FaqContainer>
   );
 };
 
