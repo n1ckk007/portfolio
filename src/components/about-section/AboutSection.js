@@ -6,25 +6,27 @@ import {
   Hide,
   ImageContainer,
 } from "./AboutSectionStyles";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
     <AboutContainer>
       <Description>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>Lorem ipsum dolor sit.</h2>
+            {/* we want to animate to opacity 1 */}
+            <motion.h2>Lorem ipsum dolor sit.</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2>
               {" "}
               Lorem <span>ipsum</span> dolor
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>Lorem</h2>
+            <motion.h2>Lorem</motion.h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
           perspiciatis aspernatur harum quas consequatur.

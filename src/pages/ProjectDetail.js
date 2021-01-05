@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { ProjectsData } from "../projectsData";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../pageAnimation";
 
 const ProjectDetail = () => {
   const history = useHistory();
@@ -20,7 +22,12 @@ const ProjectDetail = () => {
     <>
       {/* make sure project is available & only when available render out content */}
       {project && (
-        <Details>
+        <Details
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <Headline>
             <h1>{project.title}</h1>
             <img src={project.mainImg} alt="img" />
@@ -43,7 +50,7 @@ const ProjectDetail = () => {
   );
 };
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: white;
 `;
 
