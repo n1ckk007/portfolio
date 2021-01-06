@@ -7,6 +7,7 @@ import {
   ImageContainer,
 } from "./AboutSectionStyles";
 import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../../animations";
 
 const AboutSection = () => {
   return (
@@ -14,27 +15,26 @@ const AboutSection = () => {
       <Description>
         <motion.div className="title">
           <Hide>
-            {/* we want to animate to opacity 1 */}
-            <motion.h2>Lorem ipsum dolor sit.</motion.h2>
+            <motion.h2 variants={titleAnim}>Lorem ipsum dolor sit.</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnim}>
               {" "}
               Lorem <span>ipsum</span> dolor
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>Lorem</motion.h2>
+            <motion.h2 variants={titleAnim}>Lorem</motion.h2>
           </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
           perspiciatis aspernatur harum quas consequatur.
-        </p>
-        <button>Contact Me</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Me</motion.button>
       </Description>
       <ImageContainer>
-        <img src={home1} alt="Guy with a camera" />
+        <motion.img variants={photoAnim} src={home1} alt="Guy with a camera" />
       </ImageContainer>
     </AboutContainer>
   );

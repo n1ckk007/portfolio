@@ -3,7 +3,7 @@ import AboutSection from "../components/about-section/AboutSection";
 import FaqSection from "../components/faq-section/FaqSection";
 import ServicesSection from "../components/services-section/ServicesSection";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../pageAnimation";
+import { pageAnimation } from "../animations";
 
 const AboutUsPage = () => {
   return (

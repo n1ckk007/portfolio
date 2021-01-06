@@ -5,7 +5,7 @@ import theracer from "../img/theracer-small.png";
 import goodtimes from "../img/goodtimes-small.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../pageAnimation";
+import { pageAnimation } from "../animations";
 
 const ProjectsPage = () => {
   return (

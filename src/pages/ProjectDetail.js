@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { ProjectsData } from "../projectsData";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../pageAnimation";
+import { pageAnimation } from "../animations";
 
 const ProjectDetail = () => {
   const history = useHistory();
