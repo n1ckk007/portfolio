@@ -1,12 +1,20 @@
 // detects if layout changes
 import { AnimateSharedLayout } from "framer-motion";
 import React from "react";
+import { scrollReveal } from "../../animations";
+import { useScroll } from "../useScroll";
 import { FaqContainer, Answer } from "./FaqSectionStyles";
 import Toggle from "./Toggle";
 
 const FaqSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <FaqContainer>
+    <FaqContainer
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>
         Any Questions? <span>FAQ</span>
       </h2>

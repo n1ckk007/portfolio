@@ -4,7 +4,7 @@ import { Question } from "./FaqSectionStyles";
 
 const Toggle = ({ children, title }) => {
   // when u wrap u have access to the contents via children
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   //   set toggle to reverse of toggle
   return (
     // layout to let framer motion know that it's going to change

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const FaqContainer = styled.div`
+export const FaqContainer = styled(motion.div)`
   min-height: 90vh;
   padding: 5rem 10rem;
   color: white;
