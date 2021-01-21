@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const FaqContainer = styled.div`
@@ -21,7 +22,7 @@ export const FaqContainer = styled.div`
   }
 `;
 
-export const Question = styled.div`
+export const Question = styled(motion.div)`
   padding: 3rem 0rem;
   cursor: pointer;
 `;
