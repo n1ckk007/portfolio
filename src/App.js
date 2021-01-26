@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { Route, Switch, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import GlobalStyle from "./GlobalStyle";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
