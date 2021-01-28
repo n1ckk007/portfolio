@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+
 export const ServicesContainer = styled(motion.div)`
   min-height: 90vh;
   display: flex;
@@ -40,6 +41,10 @@ export const Hide = styled.div`
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 1300px) {
+    justify-content: center;
+  }
 `;
 
 export const Card = styled.div`
