@@ -7,6 +7,10 @@ export const AboutContainer = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   @media (max-width: 1300px) {
     display: block;

@@ -42,7 +42,7 @@ const ContactUsPage = () => {
 
 const ContactContainer = styled(motion.div)`
   padding: 5rem 10rem;
-  color: #353535;
+  color: whitesmoke;
   min-height: 90vh;
 
   @media (max-width: 1300px) {
@@ -53,7 +53,7 @@ const ContactContainer = styled(motion.div)`
 
 const TitleContainer = styled.div`
   margin-bottom: 4rem;
-  color: black;
+
   @media (max-width: 1300px) {
     margin-top: 5rem;
   }
@@ -67,7 +67,7 @@ const Circle = styled.div`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background: #353535;
+  background: whitesmoke;
 `;
 
 const SocialLinks = styled(motion.div)`
